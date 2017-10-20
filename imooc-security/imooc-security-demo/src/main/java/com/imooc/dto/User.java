@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.annotation.JsonView;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Created by zkr on 2017/10/19.
@@ -19,6 +20,18 @@ public class User implements Serializable{
     private Integer id;
     private String username;
     private String password;
+    private Date birthday;
+
+    @JsonView(UserSimpleView.class)
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+
 
     @JsonView(UserDetailView.class)
     public String getPassword() {

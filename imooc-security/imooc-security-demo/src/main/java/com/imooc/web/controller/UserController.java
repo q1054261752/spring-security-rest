@@ -16,9 +16,10 @@ import java.util.List;
  * Created by zkr on 2017/10/19.
  */
 @RestController
+@RequestMapping("/user")
 public class UserController {
 
-    @GetMapping("/user")
+    @GetMapping()
     @JsonView(User.UserSimpleView.class)
     public List<User> query(UserQueryCondition condition,@PageableDefault(page = 2,size = 17,sort = "username,desc") Pageable pageable){
 
@@ -33,12 +34,20 @@ public class UserController {
         return users;
     }
 
-    @GetMapping("/user/{id:\\d+}")
+    @GetMapping("/{id:\\d+}")
     @JsonView(User.UserDetailView.class)
     public User getInfo(@PathVariable  String id){
 
         User user = new User();
         user.setUsername("tom");
+        return user;
+    }
+
+    @PostMapping
+    public User create(@RequestBody User user){
+        System.out.println(ReflectionToStringBuilder.toString(user));
+        System.out.println("controller:" + user.getBirthday());
+        user.setId(1);
         return user;
     }
 }

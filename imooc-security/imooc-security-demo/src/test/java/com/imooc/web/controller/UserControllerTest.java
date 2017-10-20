@@ -13,6 +13,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
+import java.util.Date;
+
 import static org.junit.Assert.*;
 
 /**
@@ -64,6 +66,16 @@ public class UserControllerTest {
         mockMvc.perform(MockMvcRequestBuilders.get("/user/a").contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(MockMvcResultMatchers.status().is4xxClientError());
 
+    }
+
+    @Test
+    public void create() throws Exception{
+
+        String reqStr = "{\"username\":\"tom\",\"password\":null,\"birthday\":"+ new Date().getTime() +"}";
+        String result = mockMvc.perform(MockMvcRequestBuilders.post("/user").contentType(MediaType.APPLICATION_JSON_UTF8).content(reqStr))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andReturn().getResponse().getContentAsString();
+        System.out.println(result);
     }
 
 }

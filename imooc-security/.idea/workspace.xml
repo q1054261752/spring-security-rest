@@ -26,7 +26,65 @@
     <favorites_list name="imooc-security" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#query#0;class#UserController#0" expanded="false" />
+                <element signature="method#getInfo#0;class#UserController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserControllerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/test/java/com/imooc/web/controller/UserControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#UserControllerTest#0" expanded="false" />
+                <element signature="method#setup#0;class#UserControllerTest#0" expanded="false" />
+                <element signature="method#query#0;class#UserControllerTest#0" expanded="false" />
+                <element signature="method#getInfo#0;class#UserControllerTest#0" expanded="false" />
+                <element signature="method#getInfoFail#0;class#UserControllerTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#794#795#0" expanded="true" />
+                <element signature="e#825#826#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#911#912#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserQueryCondition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/UserQueryCondition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,9 +114,9 @@
         <option value="$PROJECT_DIR$/imooc-security-core/pom.xml" />
         <option value="$PROJECT_DIR$/imooc-security-browser/pom.xml" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/UserQueryCondition.java" />
-        <option value="$PROJECT_DIR$/imooc-security-demo/src/test/java/com/imooc/web/controller/UserControllerTest.java" />
-        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/User.java" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/User.java" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/test/java/com/imooc/web/controller/UserControllerTest.java" />
       </list>
     </option>
   </component>
@@ -82,80 +140,7 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="imooc-security-demo" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="imooc-security-demo" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="imooc-security-browser" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="imooc-security-browser" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="com.imooc.security:com.imooc.core:1.0-SNAPSHOT" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependencyNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="imooc-security-browser" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -227,78 +212,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc-security-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -328,7 +241,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest">
+  <component name="RunManager" selected="JUnit.UserControllerTest.create">
     <configuration default="false" name="UserControllerTest.query" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -342,32 +255,6 @@
       <option name="PACKAGE_NAME" value="com.imooc.web.controller" />
       <option name="MAIN_CLASS_NAME" value="com.imooc.web.controller.UserControllerTest" />
       <option name="METHOD_NAME" value="query" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserControllerTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.web.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="imooc-security-demo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.imooc.web.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.imooc.web.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="get" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -447,6 +334,32 @@
       <option name="MAIN_CLASS_NAME" value="com.imooc.web.controller.UserControllerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserControllerTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="imooc-security-demo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.imooc.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.imooc.web.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -939,18 +852,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.imooc-security [package]" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.UserControllerTest.query" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.get" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getInfoFial" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getInfo" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.UserControllerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getInfoFial" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getInfo" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.UserControllerTest.create" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserControllerTest.query" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getInfo" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getInfoFial" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest.get" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest.create" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserControllerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.query" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getInfo" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getInfoFial" />
       </list>
     </recent_temporary>
   </component>
@@ -969,7 +882,7 @@
       <updated>1508398475403</updated>
       <workItem from="1508398477912" duration="14142000" />
       <workItem from="1508459836733" duration="2542000" />
-      <workItem from="1508463511154" duration="10142000" />
+      <workItem from="1508463511154" duration="12732000" />
     </task>
     <servers />
   </component>
@@ -977,23 +890,23 @@
     <history-entry file="UserControllerTest - 2017.10.20 at 12h 44m 52s.xml">
       <configuration name="UserControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_get - 2017.10.20 at 11h 33m 55s.xml">
-      <configuration name="UserControllerTest.get" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_create - 2017.10.20 at 13h 40m 16s.xml">
+      <configuration name="UserControllerTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_get - 2017.10.20 at 11h 38m 51s.xml">
-      <configuration name="UserControllerTest.get" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_create - 2017.10.20 at 13h 40m 43s.xml">
+      <configuration name="UserControllerTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_getInfo - 2017.10.20 at 11h 57m 58s.xml">
-      <configuration name="UserControllerTest.getInfo" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_create - 2017.10.20 at 13h 43m 37s.xml">
+      <configuration name="UserControllerTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_getInfoFial - 2017.10.20 at 11h 42m 11s.xml">
-      <configuration name="UserControllerTest.getInfoFial" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_create - 2017.10.20 at 13h 47m 53s.xml">
+      <configuration name="UserControllerTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_getInfoFial - 2017.10.20 at 11h 42m 56s.xml">
-      <configuration name="UserControllerTest.getInfoFial" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_create - 2017.10.20 at 14h 03m 19s.xml">
+      <configuration name="UserControllerTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_query - 2017.10.20 at 11h 54m 13s.xml">
-      <configuration name="UserControllerTest.query" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_create - 2017.10.20 at 14h 06m 01s.xml">
+      <configuration name="UserControllerTest.create" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UserControllerTest_query - 2017.10.20 at 11h 59m 32s.xml">
       <configuration name="UserControllerTest.query" configurationId="JUnit" />
@@ -1006,7 +919,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26826000" />
+    <option name="totallyTimeSpent" value="29416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -1015,7 +928,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736155" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15582451" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15582451" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1030,10 +943,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40553746" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5504886" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21709532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21709532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1074,6 +987,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#query#0;class#UserController#0" expanded="false" />
+            <element signature="method#getInfo#0;class#UserController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1086,6 +1000,9 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#UserControllerTest#0" expanded="false" />
             <element signature="method#setup#0;class#UserControllerTest#0" expanded="false" />
+            <element signature="method#query#0;class#UserControllerTest#0" expanded="false" />
+            <element signature="method#getInfo#0;class#UserControllerTest#0" expanded="false" />
+            <element signature="method#getInfoFail#0;class#UserControllerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1120,12 +1037,10 @@
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
             <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1137,6 +1052,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#query#0;class#UserController#0" expanded="false" />
+            <element signature="method#getInfo#0;class#UserController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1149,6 +1065,9 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#UserControllerTest#0" expanded="false" />
             <element signature="method#setup#0;class#UserControllerTest#0" expanded="false" />
+            <element signature="method#query#0;class#UserControllerTest#0" expanded="false" />
+            <element signature="method#getInfo#0;class#UserControllerTest#0" expanded="false" />
+            <element signature="method#getInfoFail#0;class#UserControllerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1159,12 +1078,10 @@
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
             <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1298,31 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/UserQueryCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://F:/apache-maven-3.3.1/repository/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE.jar!/org/springframework/data/domain/PageRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -1339,41 +1231,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/User.java">
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/UserQueryCondition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/test/java/com/imooc/web/controller/UserControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#UserControllerTest#0" expanded="false" />
-            <element signature="method#setup#0;class#UserControllerTest#0" expanded="false" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#query#0;class#UserController#0" expanded="false" />
+            <element signature="method#getInfo#0;class#UserController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/test/java/com/imooc/web/controller/UserControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#UserControllerTest#0" expanded="false" />
+            <element signature="method#setup#0;class#UserControllerTest#0" expanded="false" />
+            <element signature="method#query#0;class#UserControllerTest#0" expanded="false" />
+            <element signature="method#getInfo#0;class#UserControllerTest#0" expanded="false" />
+            <element signature="method#getInfoFail#0;class#UserControllerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
