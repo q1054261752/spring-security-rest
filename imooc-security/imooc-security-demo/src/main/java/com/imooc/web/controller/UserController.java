@@ -7,8 +7,11 @@ import com.imooc.dto.UserQueryCondition;
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,5 +52,30 @@ public class UserController {
         System.out.println("controller:" + user.getBirthday());
         user.setId(1);
         return user;
+    }
+
+    @PutMapping("/{id:\\d+}")
+    public User update( @RequestBody @Valid User user,BindingResult errors){
+
+        if (errors.hasErrors()){
+
+            errors.getAllErrors().stream().forEach(error -> {
+
+                FieldError fieldError=(FieldError) error;
+                String message=fieldError.getField() + error.getDefaultMessage();
+                System.err.println(message);
+            });
+        }
+
+
+        System.out.println(ReflectionToStringBuilder.toString(user));
+        user.setId(1);
+        return user;
+    }
+
+    @DeleteMapping("/{id:\\d+}")
+    public void delete( @PathVariable String id){
+
+        System.out.println(id);
     }
 }

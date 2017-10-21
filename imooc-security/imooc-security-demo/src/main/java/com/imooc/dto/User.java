@@ -1,16 +1,18 @@
 package com.imooc.dto;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.annotation.JsonView;
+import com.imooc.validator.MyConstrant;
+import org.hibernate.validator.constraints.NotBlank;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by zkr on 2017/10/19.
  */
-@JsonAutoDetect(setterVisibility = JsonAutoDetect.Visibility.DEFAULT, getterVisibility = JsonAutoDetect.Visibility.DEFAULT)
+//@JsonAutoDetect(setterVisibility = JsonAutoDetect.Visibility.DEFAULT, getterVisibility = JsonAutoDetect.Visibility.DEFAULT)
 public class User implements Serializable{
     private static final long serialVersionUID = -5168955942645538663L;
     public interface UserSimpleView{};
@@ -18,8 +20,11 @@ public class User implements Serializable{
 
 
     private Integer id;
+    @MyConstrant(message = "这是一个测试")
     private String username;
+    @NotBlank(message = "密码不能为空白")
     private String password;
+    @Past(message = "生日必须是过去的时间")
     private Date birthday;
 
     @JsonView(UserSimpleView.class)
