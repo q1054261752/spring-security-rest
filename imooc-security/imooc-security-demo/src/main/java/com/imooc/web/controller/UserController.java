@@ -42,11 +42,12 @@ public class UserController {
     @JsonView(User.UserDetailView.class)
     public User getInfo(@PathVariable  String id) throws Exception {
 
-        throw new UserNotException(id);
+//        throw new UserNotException(id);
+        System.out.println("进入getInfo Controller");
 
-//        User user = new User();
-//        user.setUsername("tom");
-//        return user;
+        User user = new User();
+        user.setUsername("tom");
+        return user;
     }
 
     @PostMapping
