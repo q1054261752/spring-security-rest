@@ -10,8 +10,8 @@ import java.util.Date;
 /**
  * Created by zkr on 2017/10/23.
  */
-@Aspect    //为什么要写切片了，因为interceptor是拿不到Controller方法的参数的
-@Component
+//@Aspect    //为什么要写切片了，因为interceptor是拿不到Controller方法的参数的
+//@Component
 public class TimeAspect {
 
     @Around("execution(* com.imooc.web.controller.UserController.*(..))")
