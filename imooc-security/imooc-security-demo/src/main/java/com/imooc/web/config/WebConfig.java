@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * Created by zkr on 2017/10/23.
  */
-@Configuration
+//@Configuration
 public class WebConfig extends WebMvcConfigurerAdapter{
 
 //    @Qualifier("qwe")
