@@ -18,10 +18,14 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter
     protected void configure(HttpSecurity http) throws Exception {
 //        http.httpBasic().
         http.formLogin()
-            .and()
-            .authorizeRequests()
-            .anyRequest()
-            .authenticated();
+             .loginPage("/imooc-signIn.html")
+                .loginProcessingUrl("/authentication/form")   //自定义 登录url
+             .and()
+             .authorizeRequests()
+             .antMatchers("/imooc-signIn.html").permitAll()
+                .anyRequest()
+                .authenticated()
+                .and().csrf().disable();   // 禁用默认开启的跨站请求伪造
     }
 
     //密码加密类配置
