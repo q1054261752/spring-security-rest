@@ -1,5 +1,7 @@
 package com.imooc.security.browser;
 
+import com.imooc.security.core.properties.SecurityProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -11,18 +13,22 @@ import org.springframework.stereotype.Component;
  * Created by zkr on 2017/10/25.
  */
 @Component
-
 public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter
 {
+
+    @Autowired
+    private SecurityProperties securityProperties;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 //        http.httpBasic().
         http.formLogin()
-             .loginPage("/imooc-signIn.html")
+             .loginPage("/authentication/require")
                 .loginProcessingUrl("/authentication/form")   //自定义 登录url
              .and()
              .authorizeRequests()
-             .antMatchers("/imooc-signIn.html").permitAll()
+             .antMatchers("/authentication/require",
+                     securityProperties.getBrowser().getLoginPage()).permitAll()
                 .anyRequest()
                 .authenticated()
                 .and().csrf().disable();   // 禁用默认开启的跨站请求伪造
