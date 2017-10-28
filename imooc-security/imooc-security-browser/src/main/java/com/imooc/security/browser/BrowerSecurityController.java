@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.web.DefaultRedirectStrategy;
 import org.springframework.security.web.RedirectStrategy;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.savedrequest.HttpSessionRequestCache;
 import org.springframework.security.web.savedrequest.RequestCache;
 import org.springframework.security.web.savedrequest.SavedRequest;
@@ -31,6 +32,8 @@ public class BrowerSecurityController {
     private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
     @Autowired
     private SecurityProperties securityProperties;
+
+
 
     /**
      * 当需要身份认证是跳转到这里

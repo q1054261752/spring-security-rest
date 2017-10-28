@@ -27,11 +27,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BrowerSecurityController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/BrowerSecurityController.java">
+      <file leaf-file-name="ImoocAuthenticationFailureHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/authentication/ImoocAuthenticationFailureHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="57">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImoocAuthenticationSuccessHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/authentication/ImoocAuthenticationSuccessHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,8 +57,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,10 +70,12 @@
       <projects_view />
     </option>
   </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SCOPE" value="This Class" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/imooc-security-app/pom.xml" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/resources/application.yum" />
         <option value="$PROJECT_DIR$/imooc-security-browser/pom.xml" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/UserQueryCondition.java" />
@@ -103,13 +117,16 @@
         <option value="$PROJECT_DIR$/imooc-security-core/src/main/java/SecurityCoreConfig.java" />
         <option value="$PROJECT_DIR$/imooc-security-core/src/main/java/com/imooc/security/core/properties/SecurityProperties.java" />
         <option value="$PROJECT_DIR$/imooc-security-core/src/main/java/com/imooc/security/core/SecurityCoreConfig.java" />
-        <option value="$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/BrowerSecurityController.java" />
-        <option value="$PROJECT_DIR$/imooc-security-core/src/main/java/com/imooc/security/core/properties/BrowserProperties.java" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/resources/public/demo-signIn.html" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/resources/public/demo-index.html" />
-        <option value="$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/BrowserSecurityConfig.java" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/imooc-security-browser/src/main/resources/public/imooc-signIn.html" />
+        <option value="$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/authentication/ImoocAuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/BrowerSecurityController.java" />
+        <option value="$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/authentication/ImoocAuthenticationFailureHandler.java" />
+        <option value="$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/BrowserSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/imooc-security-core/src/main/java/com/imooc/security/core/properties/LoginType.java" />
+        <option value="$PROJECT_DIR$/imooc-security-core/src/main/java/com/imooc/security/core/properties/BrowserProperties.java" />
       </list>
     </option>
   </component>
@@ -171,8 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane />
       </pane>
       <pane id="Scope">
@@ -185,9 +201,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,6 +221,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/imooc-security-core/src/main/java" />
     <property name="ToolWindowAnt Build.ShowToolbar" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://G:/ideaWorkspace/workspace/springboot/imooc-security/imooc-security-browser/src/main/java/com/imooc/security/browser/authentication/ImoocAuthenticationFailureHandler.java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -735,7 +753,8 @@
       <workItem from="1508893250865" duration="12195000" />
       <workItem from="1508981004745" duration="10474000" />
       <workItem from="1509022288226" duration="1318000" />
-      <workItem from="1509068353624" duration="15123000" />
+      <workItem from="1509068353624" duration="16344000" />
+      <workItem from="1509149936732" duration="4413000" />
     </task>
     <servers />
   </component>
@@ -772,40 +791,40 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132734000" />
+    <option name="totallyTimeSpent" value="138368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33713356" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32107022" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32026145" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09984872" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37091503" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26701966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27987897" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2624811" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39087948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33660132" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38562092" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26701966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="140" y="135" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -892,41 +911,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://F:/apache-maven-3.3.1/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/apache-maven-3.3.1/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE-sources.jar!/org/springframework/security/web/context/request/async/WebAsyncManagerIntegrationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/apache-maven-3.3.1/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/apache-maven-3.3.1/repository/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/web/filter/DelegatingFilterProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/apache-maven-3.3.1/repository/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/web/filter/RequestContextFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://F:/apache-maven-3.3.1/repository/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/web/filter/HttpPutFormContentFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1151,9 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9262">
           <caret line="463" column="33" selection-start-line="463" selection-start-column="33" selection-end-line="463" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#49651#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1161,7 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,21 +1149,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="611" column="50" selection-start-line="611" selection-start-column="45" selection-end-line="611" selection-end-column="50" />
-          <folding>
-            <element signature="e#24329#24330#0" expanded="false" />
-            <element signature="e#24394#24395#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test1.java" />
     <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/support/SimpleResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1203,7 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1237,15 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/BrowserSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1253,7 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1261,7 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1269,7 +1225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1281,18 +1236,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-core/src/main/java/com/imooc/security/core/properties/BrowserProperties.java">
+    <entry file="jar://F:/apache-maven-3.3.1/repository/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/core/AuthenticationException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="118">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.core.AuthenticationException">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.core.AuthenticationException</OriginalElement>
+          <nodes>
+            <node x="" y="">java.lang.Throwable</node>
+            <node x="" y="">org.springframework.security.authentication.BadCredentialsException</node>
+            <node x="" y="">org.springframework.security.core.userdetails.UsernameNotFoundException</node>
+            <node x="" y="">org.springframework.security.authentication.ProviderNotFoundException</node>
+            <node x="" y="">org.springframework.security.authentication.LockedException</node>
+            <node x="" y="">org.springframework.security.authentication.InternalAuthenticationServiceException</node>
+            <node x="" y="">org.springframework.security.authentication.CredentialsExpiredException</node>
+            <node x="" y="">org.springframework.security.web.authentication.www.NonceExpiredException</node>
+            <node x="" y="">org.springframework.security.authentication.DisabledException</node>
+            <node x="" y="">org.springframework.security.core.AuthenticationException</node>
+            <node x="" y="">org.springframework.security.authentication.AuthenticationCredentialsNotFoundException</node>
+            <node x="" y="">org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationException</node>
+            <node x="" y="">org.springframework.security.authentication.AccountExpiredException</node>
+            <node x="" y="">org.springframework.security.web.authentication.rememberme.CookieTheftException</node>
+            <node x="" y="">org.springframework.security.web.authentication.session.SessionAuthenticationException</node>
+            <node x="" y="">org.springframework.security.authentication.AuthenticationServiceException</node>
+            <node x="" y="">java.lang.RuntimeException</node>
+            <node x="" y="">org.springframework.security.web.authentication.rememberme.InvalidCookieException</node>
+            <node x="" y="">java.lang.Exception</node>
+            <node x="" y="">org.springframework.security.authentication.AccountStatusException</node>
+            <node x="" y="">java.io.Serializable</node>
+            <node x="" y="">org.springframework.security.authentication.InsufficientAuthenticationException</node>
+            <node x="" y="">org.springframework.security.oauth2.common.exceptions.UnapprovedClientAuthenticationException</node>
+            <node x="" y="">org.springframework.security.oauth2.client.http.AccessTokenRequiredException</node>
+            <node x="" y="">org.springframework.security.web.authentication.preauth.PreAuthenticatedCredentialsNotFoundException</node>
+            <node x="" y="">org.springframework.social.security.SocialAuthenticationException</node>
+            <node x="" y="">org.springframework.social.security.SocialAuthenticationRedirectException</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8837837837837837" x="2229.798165137615" y="393.86850152905197" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/BrowerSecurityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="198">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/BrowserSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-core/src/main/java/com/imooc/security/core/properties/BrowserProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding>
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-core/src/main/java/com/imooc/security/core/properties/LoginType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/authentication/ImoocAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/imooc/security/browser/authentication/ImoocAuthenticationSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1365,6 +1412,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
