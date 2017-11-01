@@ -9,13 +9,24 @@
     <form action="/authentication/form" method="post">
         <table>
             <tr>
-                <td><label for="txtname">账号：</label></td>
-                <td><input type="text" id="txtname" name="username" /></td>
+                <td colspan="2">
+                    <label for="txtname">账号：</label>
+                    <label><input type="text" id="txtname" name="username" /></label>
+                </td>
             </tr>
             <tr>
-                <td><label for="txtpswd">密码：</label></td>
-                <td><input type="password" id="txtpswd" name="password" /></td>
+                <td>
+                    <label for="txtpswd">密码：</label>
+                    <input type="password" id="txtpswd" name="password" />
+                </td>
             </tr>
+            <tr>
+            <td colspan="2">
+                <input type="text" name="imageCode" size="4" maxlength="4"/>
+                <img src="/code/image" style="vertical-align: middle"/>
+            </td>
+        </tr>
+
             <tr>
                 <td colspan=2>
                     <input type="reset" />
