@@ -2,6 +2,7 @@ package com.imooc.security.browser;
 
 import com.imooc.security.browser.authentication.ImoocAuthenticationFailureHandler;
 import com.imooc.security.core.properties.SecurityProperties;
+import com.imooc.security.core.validate.code.ValidateCodeFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -9,6 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.stereotype.Component;
 
 /**
@@ -28,8 +30,13 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
+        ValidateCodeFilter validateCodeFilter = new ValidateCodeFilter();//图形验证码过滤器
+        validateCodeFilter.setAuthenticationFailureHander(imoocAuthenticationFailureHandler);
+
 //        http.httpBasic().
-        http.formLogin()
+        http.addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class)
+             .formLogin()
              .loginPage("/authentication/require")
                 .loginProcessingUrl("/authentication/form")   //自定义 登录url
                 .successHandler(imoocAuthenticationSuccessHandler)  //设置自定义成功处理器

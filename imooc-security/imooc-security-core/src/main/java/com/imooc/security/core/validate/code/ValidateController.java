@@ -22,7 +22,7 @@ import java.util.Random;
 @RestController
 public class ValidateController {
 
-    private static final String SESSION_KEY = "SESSION_KEY_IMAGE_CODE";
+    public static final String SESSION_KEY = "SESSION_KEY_IMAGE_CODE";
     private SessionStrategy sessionStrategy = new HttpSessionSessionStrategy();
     @Autowired
     private SecurityProperties securityProperties;
@@ -32,6 +32,7 @@ public class ValidateController {
         ImageCode imageCode = createImageCode(request);
         sessionStrategy.setAttribute(new ServletWebRequest(request),SESSION_KEY,imageCode);
         ImageIO.write(imageCode.getImage(),"JPEG",response.getOutputStream());
+        return;
     }
      private ImageCode createImageCode(HttpServletRequest request) {
         int width = 67;
