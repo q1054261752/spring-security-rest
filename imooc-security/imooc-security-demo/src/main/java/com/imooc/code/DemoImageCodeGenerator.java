@@ -8,7 +8,7 @@ import org.springframework.web.context.request.ServletWebRequest;
 /**
  * Created by zkr on 2017/11/6.
  */
-@Component("imageCodeGenerator")
+//@Component("imageCodeGenerator")
 public class DemoImageCodeGenerator implements ValidateCodeGenerator{
     @Override
     public ImageCode createImageCode(ServletWebRequest request) {

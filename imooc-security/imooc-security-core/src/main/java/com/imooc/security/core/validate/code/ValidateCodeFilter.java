@@ -40,9 +40,11 @@ public class ValidateCodeFilter extends OncePerRequestFilter implements Initiali
     public void afterPropertiesSet() throws ServletException {   // InitializingBean 接口中的方法，bean加载的时候会被加载
         super.afterPropertiesSet();
         String[] configUrls = StringUtils.splitByWholeSeparatorPreserveAllTokens(securityProperties.getCode().getImage().getUrl(), ",");
-        for (String configUrl:configUrls){
-            urls.add(configUrl);
-        }
+        if (configUrls != null){
+            for (String configUrl : configUrls) {
+                urls.add(configUrl);
+            }
+       }
         urls.add("/authentication/form");
     }
 
