@@ -73,7 +73,7 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter
              .authorizeRequests()
              .antMatchers("/authentication/require",
                      securityProperties.getBrowser().getLoginPage()
-                     ,"/code/image","/code/sms").permitAll()
+                     ,"/code/*").permitAll()
                 .anyRequest()
                 .authenticated()
                 .and().csrf().disable();   // 禁用默认开启的跨站请求伪造

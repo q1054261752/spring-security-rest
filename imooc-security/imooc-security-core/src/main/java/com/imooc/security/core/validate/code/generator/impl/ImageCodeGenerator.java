@@ -2,8 +2,9 @@ package com.imooc.security.core.validate.code.generator.impl;
 
 import com.imooc.security.core.properties.SecurityProperties;
 import com.imooc.security.core.validate.code.ImageCode;
-import com.imooc.security.core.validate.code.ValidateCode;
 import com.imooc.security.core.validate.code.generator.ValidateCodeGenerator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.context.request.ServletWebRequest;
 
@@ -14,12 +15,14 @@ import java.util.Random;
 /**
  * Created by zkr on 2017/11/6.
  */
+@Component("imageCodeGenerator")
 public class ImageCodeGenerator implements ValidateCodeGenerator {
 
+    @Autowired
     private SecurityProperties securityProperties;
 
     @Override
-    public ImageCode createImageCode(ServletWebRequest request) {
+    public ImageCode create(ServletWebRequest request) {
         int width = ServletRequestUtils.getIntParameter(request.getRequest(),"width",securityProperties.getCode().getImage().getWidth());
         int height = ServletRequestUtils.getIntParameter(request.getRequest(),"height",securityProperties.getCode().getImage().getHeight());
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
