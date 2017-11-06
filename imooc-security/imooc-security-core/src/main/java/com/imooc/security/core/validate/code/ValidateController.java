@@ -2,10 +2,12 @@ package com.imooc.security.core.validate.code;
 
 import com.imooc.security.core.properties.SecurityProperties;
 import com.imooc.security.core.validate.code.generator.ValidateCodeGenerator;
+import com.imooc.security.core.validate.code.sms.SmsCodeSender;
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.connect.web.HttpSessionSessionStrategy;
 import org.springframework.social.connect.web.SessionStrategy;
+import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,10 +15,7 @@ import org.springframework.web.context.request.ServletWebRequest;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
-import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.util.Random;
 
 /**
  * Created by zkr on 2017/10/30.
@@ -30,15 +29,30 @@ public class ValidateController {
     @Autowired
     private ValidateCodeGenerator imageCodeGenerator;
     @Autowired
+    private ValidateCodeGenerator smsCodeGenerator;
+    @Autowired
     private SecurityProperties securityProperties;
+    @Autowired
+    private SmsCodeSender smsCodeSender;
 
 
     @GetMapping("/code/image")
     public void createCode(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        ImageCode imageCode = imageCodeGenerator.createImageCode(new ServletWebRequest(request));
-        sessionStrategy.setAttribute(new ServletWebRequest(request),SESSION_KEY,imageCode);
+        ImageCode imageCode = (ImageCode) imageCodeGenerator.createImageCode(new ServletWebRequest(request));
+        sessionStrategy.setAttribute(new ServletWebRequest(request),SESSION_KEY, imageCode);
         ImageIO.write(imageCode.getImage(),"JPEG",response.getOutputStream());
+        return;
+    }
+
+    @GetMapping("/code/sms")
+    public void createSmsCode(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletRequestBindingException {
+
+        ValidateCode smsCode = smsCodeGenerator.createImageCode(new ServletWebRequest(request));
+        sessionStrategy.setAttribute(new ServletWebRequest(request),SESSION_KEY, smsCode);
+        String mobile = ServletRequestUtils.getRequiredStringParameter(request,"mobile");
+        smsCodeSender.send(mobile,smsCode.getCode());
+
         return;
     }
 

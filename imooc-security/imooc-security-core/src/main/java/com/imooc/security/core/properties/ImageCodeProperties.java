@@ -3,14 +3,14 @@ package com.imooc.security.core.properties;
 /**
  * Created by zkr on 2017/11/4.
  */
-public class ImageCodeProperties {
+public class ImageCodeProperties extends SmsCodeProperties{
 
     private int width = 67;
     private int height = 23;
-    private int length = 4;
-    private int exprireIn = 60;
 
-    private String url;
+    public ImageCodeProperties(){
+        setLength(4);   //设置图片验证码长度的默认值是4
+    }
 
     public int getWidth() {
         return width;
@@ -23,23 +23,5 @@ public class ImageCodeProperties {
     }
     public void setHeight(int height) {
         this.height = height;
-    }
-    public int getLength() {
-        return length;
-    }
-    public void setLength(int length) {
-        this.length = length;
-    }
-    public int getExprireIn() {
-        return exprireIn;
-    }
-    public void setExprireIn(int exprireIn) {
-        this.exprireIn = exprireIn;
-    }
-    public String getUrl() {
-        return url;
-    }
-    public void setUrl(String url) {
-        this.url = url;
     }
 }

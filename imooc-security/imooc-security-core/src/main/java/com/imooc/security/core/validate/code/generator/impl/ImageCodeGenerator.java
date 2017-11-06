@@ -2,8 +2,8 @@ package com.imooc.security.core.validate.code.generator.impl;
 
 import com.imooc.security.core.properties.SecurityProperties;
 import com.imooc.security.core.validate.code.ImageCode;
+import com.imooc.security.core.validate.code.ValidateCode;
 import com.imooc.security.core.validate.code.generator.ValidateCodeGenerator;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.context.request.ServletWebRequest;
 

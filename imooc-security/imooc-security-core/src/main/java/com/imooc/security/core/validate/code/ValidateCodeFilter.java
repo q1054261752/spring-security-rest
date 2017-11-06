@@ -3,7 +3,6 @@ package com.imooc.security.core.validate.code;
 import com.imooc.security.core.properties.SecurityProperties;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.social.connect.web.HttpSessionSessionStrategy;
 import org.springframework.social.connect.web.SessionStrategy;
@@ -70,7 +69,7 @@ public class ValidateCodeFilter extends OncePerRequestFilter implements Initiali
 
     private void validate(ServletWebRequest request) throws ServletRequestBindingException {
 
-        ImageCode codeInSession = (ImageCode) sessionStrategy.getAttribute(request,
+        ValidateCode codeInSession = (ValidateCode) sessionStrategy.getAttribute(request,
                 ValidateController.SESSION_KEY);
 
         String codeInRequest = ServletRequestUtils.getStringParameter(request.getRequest(),"imageCode");
