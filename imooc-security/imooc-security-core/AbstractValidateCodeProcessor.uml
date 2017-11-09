@@ -3,20 +3,16 @@
   <ID>JAVA</ID>
   <OriginalElement>com.imooc.security.core.validate.code.generator.processor.impl.AbstractValidateCodeProcessor</OriginalElement>
   <nodes>
-    <node x="424.4940016356087" y="720.741004466663">com.imooc.security.core.validate.code.generator.impl.SmsCodeGenerator</node>
-    <node x="442.42991190287705" y="8.985388535843896">com.imooc.security.core.validate.code.image.ImageCodeProcessor</node>
-    <node x="0.0" y="0.0">com.imooc.security.core.validate.code.generator.processor.ValidateCodeProcessor</node>
-    <node x="708.8686277325086" y="474.4277962987114">com.imooc.security.core.validate.code.generator.impl.ImageCodeGenerator</node>
-    <node x="430.40098652739505" y="456.4185538462567">com.imooc.security.core.validate.code.generator.ValidateCodeGenerator</node>
-    <node x="9.90165104344294" y="423.311034897927">com.imooc.security.core.validate.code.sms.SmsCodeProcessor</node>
-    <node x="195.19863922311606" y="224.18583399210172">com.imooc.security.core.validate.code.generator.processor.impl.AbstractValidateCodeProcessor</node>
+    <node x="202.03798727295168" y="469.20420015786596">com.imooc.security.core.validate.code.generator.impl.SmsCodeGenerator</node>
+    <node x="350.562766480974" y="87.88305460406652">com.imooc.security.core.validate.code.image.ImageCodeProcessor</node>
+    <node x="56.20107719928188" y="85.38240574506283">com.imooc.security.core.validate.code.generator.processor.ValidateCodeProcessor</node>
+    <node x="519.9171017001927" y="286.65759881217645">com.imooc.security.core.validate.code.generator.impl.ImageCodeGenerator</node>
+    <node x="298.73132764050104" y="285.9409954979623">com.imooc.security.core.validate.code.generator.ValidateCodeGenerator</node>
+    <node x="48.810089104484234" y="335.7670492605841">com.imooc.security.core.validate.code.sms.SmsCodeProcessor</node>
+    <node x="186.55231965399577" y="213.37793453070137">com.imooc.security.core.validate.code.generator.processor.impl.AbstractValidateCodeProcessor</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.imooc.security.core.validate.code.generator.processor.impl.AbstractValidateCodeProcessor" target="com.imooc.security.core.validate.code.generator.ValidateCodeGenerator">
-      <point x="0.0" y="0.0" />
-      <point x="0.0" y="0.0" />
-    </edge>
     <edge source="com.imooc.security.core.validate.code.generator.processor.impl.AbstractValidateCodeProcessor" target="com.imooc.security.core.validate.code.generator.processor.ValidateCodeProcessor">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
@@ -38,7 +34,7 @@
       <point x="0.0" y="0.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="607.0" y="183.5" />
+  <settings layout="Hierarchic Group" zoom="0.925249169435216" x="370.2441651705565" y="311.0" />
   <SelectedNodes />
   <Categories />
   <SCOPE>All</SCOPE>

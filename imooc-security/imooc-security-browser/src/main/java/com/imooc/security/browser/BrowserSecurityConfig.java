@@ -1,7 +1,9 @@
 package com.imooc.security.browser;
 
 import com.imooc.security.browser.authentication.ImoocAuthenticationFailureHandler;
+import com.imooc.security.core.authentication.mobile.SmsCodeAuthenticationSecurityConfig;
 import com.imooc.security.core.properties.SecurityProperties;
+import com.imooc.security.core.validate.code.SmsCodeFilter;
 import com.imooc.security.core.validate.code.ValidateCodeFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -37,6 +39,8 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter
     private DataSource dataSource;
     @Autowired
     private UserDetailsService userDetailsService;
+    @Autowired
+    private SmsCodeAuthenticationSecurityConfig smsCodeAuthenticationSecurityConfig;
 
     @Bean
     public PersistentTokenRepository persistentTokenRepository(){  //记住我功能
@@ -57,8 +61,14 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter
         validateCodeFilter.setSecurityProperties(securityProperties);
         validateCodeFilter.afterPropertiesSet();
 
+        SmsCodeFilter smsCodeFilter = new SmsCodeFilter();//图形验证码过滤器
+        smsCodeFilter.setAuthenticationFailureHander(imoocAuthenticationFailureHandler);
+        smsCodeFilter.setSecurityProperties(securityProperties);
+        smsCodeFilter.afterPropertiesSet();
+
 //        http.httpBasic().
-        http.addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class)
+        http.addFilterBefore(smsCodeFilter, UsernamePasswordAuthenticationFilter.class)
+              .addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class)
              .formLogin()
              .loginPage("/authentication/require")
                 .loginProcessingUrl("/authentication/form")   //自定义 登录url
@@ -76,7 +86,8 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter
                      ,"/code/*").permitAll()
                 .anyRequest()
                 .authenticated()
-                .and().csrf().disable();   // 禁用默认开启的跨站请求伪造
+                .and().csrf().disable()   // 禁用默认开启的跨站请求伪造
+              .apply(smsCodeAuthenticationSecurityConfig);
     }
 
     //密码加密类配置
